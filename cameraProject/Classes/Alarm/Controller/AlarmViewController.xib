@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlarmViewController">
+            <connections>
+                <outlet property="fourBtn" destination="Vmk-an-OUk" id="7VX-FU-TFu"/>
+                <outlet property="line" destination="mSk-SW-QQN" id="LrP-sz-t6D"/>
+                <outlet property="oneBtn" destination="mq4-u4-iA0" id="coa-uC-4SU"/>
+                <outlet property="threeBtn" destination="2NJ-3h-wNo" id="MMc-P9-UKd"/>
+                <outlet property="twoBtn" destination="d0U-N0-Cxw" id="Lbh-MW-ou3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcY-9S-SFX">
+                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0U-N0-Cxw">
+                            <rect key="frame" x="184.5" y="0.0" width="91.5" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="cvg-Sq-Hjp"/>
+                            </constraints>
+                            <state key="normal" title="过流">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="FlowBtnClick:" destination="-1" eventType="touchUpInside" id="3bS-i0-iDh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NJ-3h-wNo">
+                            <rect key="frame" x="92.5" y="0.0" width="91" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="UFD-ZM-yCb"/>
+                            </constraints>
+                            <state key="normal" title="过压">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="OvervoltageBtnClick:" destination="-1" eventType="touchUpInside" id="hQe-3W-Qo6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmk-an-OUk">
+                            <rect key="frame" x="284" y="0.0" width="91" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="IkJ-Cc-sDT"/>
+                            </constraints>
+                            <state key="normal" title="漏电">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="ElectricleakageBtnClick:" destination="-1" eventType="touchUpInside" id="ab3-40-mzR"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xz-nO-6f8">
+                            <rect key="frame" x="91" y="10" width="1" height="24"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="O7p-cx-72e"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7A-d6-GPG">
+                            <rect key="frame" x="183.5" y="10" width="1" height="24"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="dFP-Di-8pl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0q-gn-a57">
+                            <rect key="frame" x="276.5" y="10" width="1" height="24"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="g7N-qe-LC4"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq4-u4-iA0">
+                            <rect key="frame" x="0.0" y="0.0" width="91.5" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="fpi-yC-fsU"/>
+                            </constraints>
+                            <state key="normal" title="欠压"/>
+                            <connections>
+                                <action selector="UndervoltageBtnClick:" destination="-1" eventType="touchUpInside" id="o0e-QE-h0H"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Vmk-an-OUk" secondAttribute="trailing" id="1jE-DR-lhH"/>
+                        <constraint firstItem="Vmk-an-OUk" firstAttribute="leading" secondItem="r0q-gn-a57" secondAttribute="trailing" constant="6" id="5Tf-Du-ZPX"/>
+                        <constraint firstItem="r0q-gn-a57" firstAttribute="leading" secondItem="d0U-N0-Cxw" secondAttribute="trailing" id="7Ol-bs-t0K"/>
+                        <constraint firstItem="d0U-N0-Cxw" firstAttribute="leading" secondItem="U7A-d6-GPG" secondAttribute="trailing" id="8fS-su-xW4"/>
+                        <constraint firstItem="2NJ-3h-wNo" firstAttribute="leading" secondItem="3Xz-nO-6f8" secondAttribute="trailing" id="DAQ-UC-EHv"/>
+                        <constraint firstItem="U7A-d6-GPG" firstAttribute="top" secondItem="RcY-9S-SFX" secondAttribute="top" constant="10" id="KA8-4e-7Vb"/>
+                        <constraint firstAttribute="bottom" secondItem="3Xz-nO-6f8" secondAttribute="bottom" constant="10" id="Lc1-CO-zZt"/>
+                        <constraint firstAttribute="bottom" secondItem="U7A-d6-GPG" secondAttribute="bottom" constant="10" id="Rsg-kK-PIX"/>
+                        <constraint firstItem="U7A-d6-GPG" firstAttribute="leading" secondItem="2NJ-3h-wNo" secondAttribute="trailing" id="TRD-S5-xsr"/>
+                        <constraint firstItem="2NJ-3h-wNo" firstAttribute="top" secondItem="RcY-9S-SFX" secondAttribute="top" id="ZIF-BD-j17"/>
+                        <constraint firstItem="3Xz-nO-6f8" firstAttribute="leading" secondItem="mq4-u4-iA0" secondAttribute="trailing" id="ZOk-fB-Cg0"/>
+                        <constraint firstItem="2NJ-3h-wNo" firstAttribute="width" secondItem="mq4-u4-iA0" secondAttribute="width" id="aOQ-3Z-dhP"/>
+                        <constraint firstItem="r0q-gn-a57" firstAttribute="top" secondItem="RcY-9S-SFX" secondAttribute="top" constant="10" id="cDC-hQ-NkC"/>
+                        <constraint firstAttribute="bottom" secondItem="r0q-gn-a57" secondAttribute="bottom" constant="10" id="cH8-Aj-HzY"/>
+                        <constraint firstItem="d0U-N0-Cxw" firstAttribute="width" secondItem="mq4-u4-iA0" secondAttribute="width" id="fqQ-p7-gxZ"/>
+                        <constraint firstItem="3Xz-nO-6f8" firstAttribute="top" secondItem="RcY-9S-SFX" secondAttribute="top" constant="10" id="gZy-ON-Icq"/>
+                        <constraint firstItem="mq4-u4-iA0" firstAttribute="top" secondItem="RcY-9S-SFX" secondAttribute="top" id="oFW-m3-2xU"/>
+                        <constraint firstItem="d0U-N0-Cxw" firstAttribute="top" secondItem="RcY-9S-SFX" secondAttribute="top" id="qEw-2c-Uaj"/>
+                        <constraint firstAttribute="height" constant="44" id="sN9-C3-4fU"/>
+                        <constraint firstItem="mq4-u4-iA0" firstAttribute="leading" secondItem="RcY-9S-SFX" secondAttribute="leading" id="sP0-0u-r3h"/>
+                        <constraint firstItem="Vmk-an-OUk" firstAttribute="top" secondItem="RcY-9S-SFX" secondAttribute="top" id="tat-ME-7rC"/>
+                        <constraint firstItem="Vmk-an-OUk" firstAttribute="width" secondItem="mq4-u4-iA0" secondAttribute="width" id="xdM-6b-DiI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSk-SW-QQN">
+                    <rect key="frame" x="15" y="103" width="62" height="3"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RcY-9S-SFX" secondAttribute="trailing" id="Wk4-7M-lzU"/>
+                <constraint firstItem="RcY-9S-SFX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="iwZ-og-kzQ"/>
+                <constraint firstItem="RcY-9S-SFX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pzw-mP-cyG"/>
+            </constraints>
+            <point key="canvasLocation" x="85.5" y="73.5"/>
+        </view>
+    </objects>
+</document>

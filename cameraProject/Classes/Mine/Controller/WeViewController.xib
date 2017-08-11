@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IJc-IZ-pbc">
+                    <rect key="frame" x="147" y="109" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="AuA-FS-o3G"/>
+                        <constraint firstAttribute="width" constant="80" id="a13-eo-1vQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqF-Vh-5Eq">
+                    <rect key="frame" x="147" y="626" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="9mU-AP-Tbc"/>
+                        <constraint firstAttribute="height" constant="21" id="xAt-xu-SOI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杭州芯芸科技有限公司位于新加坡科技园。杭州芯芸科技有限公司本着“客户第一，诚信至上”的原则，欢迎国内外企业/公司/机构与本单位建立长期的合作关系。热诚欢迎各界朋友前来参观、考察、洽谈业务。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8j-le-ayo">
+                    <rect key="frame" x="16" y="210" width="343" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="Jd6-1m-xav"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IJc-IZ-pbc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GTj-Jr-9ft"/>
+                <constraint firstItem="a8j-le-ayo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="LoG-51-Ixe"/>
+                <constraint firstItem="TqF-Vh-5Eq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N4m-JG-1gA"/>
+                <constraint firstAttribute="bottom" secondItem="TqF-Vh-5Eq" secondAttribute="bottom" constant="20" id="WHF-Gs-UQy"/>
+                <constraint firstItem="IJc-IZ-pbc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="109" id="fjd-B0-5hc"/>
+                <constraint firstAttribute="trailing" secondItem="a8j-le-ayo" secondAttribute="trailing" constant="16" id="jJp-Qj-gf6"/>
+                <constraint firstItem="a8j-le-ayo" firstAttribute="top" secondItem="IJc-IZ-pbc" secondAttribute="bottom" constant="21" id="lpC-S3-qYK"/>
+            </constraints>
+            <point key="canvasLocation" x="37.5" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WeIcon" width="60" height="60"/>
+    </resources>
+</document>
