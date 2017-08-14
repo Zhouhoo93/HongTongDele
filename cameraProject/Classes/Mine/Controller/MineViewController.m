@@ -8,7 +8,7 @@
 
 #import "MineViewController.h"
 #import "MineTableViewCell.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 #import "HSingleGlobalData.h"
 #import "ContactsViewController.h"
 #import "UILabel+LeftTopAlign.h"
@@ -126,7 +126,7 @@
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }
@@ -412,7 +412,7 @@
     UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         [self clearLocalData];
-        LoginViewController *VC =[[LoginViewController alloc] init];
+        OneLoginViewController *VC =[[OneLoginViewController alloc] init];
         VC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:VC animated:YES];
 

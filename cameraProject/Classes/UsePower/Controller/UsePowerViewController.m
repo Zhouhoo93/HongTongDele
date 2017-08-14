@@ -7,7 +7,7 @@
 //
 
 #import "UsePowerViewController.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 @interface UsePowerViewController ()
 @property (nonatomic,strong)UILabel *twoLabel1;
 @property (nonatomic,strong)UILabel *twoLabel2;
@@ -334,7 +334,7 @@
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

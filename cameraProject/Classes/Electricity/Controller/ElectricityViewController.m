@@ -16,7 +16,7 @@
 #import "iflyMSC/IFlySpeechUtility.h"
 #import "iflyMSC/IFlySpeechSynthesizer.h"
 #import "iflyMSC/IFlyMSC.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 #import "JPUSHService.h"
 #import "StatusModel.h"
 #import "dayGenModel.h"
@@ -4587,7 +4587,7 @@
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

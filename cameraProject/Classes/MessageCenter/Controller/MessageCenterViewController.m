@@ -11,7 +11,7 @@
 #import "MJRefresh.h"
 #import "AlarmModel.h"
 #import "DetailsViewController.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 static const CGFloat MJDuration = 2.0;
 @interface MessageCenterViewController ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource,CallDelegate>
 @property (weak, nonatomic) IBOutlet UIView *headerView;
@@ -519,7 +519,7 @@ static const CGFloat MJDuration = 2.0;
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

@@ -9,7 +9,7 @@
 #import "PowerDetailViewController.h"
 #import "JHTableChart.h"
 #import "yongdianModel.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 @interface PowerDetailViewController ()
 @property(nonatomic,strong)  yongdianModel *model;
 @property (nonatomic,strong) NSMutableArray *dataArray;
@@ -511,7 +511,7 @@
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

@@ -21,7 +21,7 @@
 #import "PopoverView.h"
 #import "AdministrationModel.h"
 #import "MBProgressHUD.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 #import "MJExtension.h"
 static const CGFloat MJDuration = 2.0;
 
@@ -1757,7 +1757,7 @@ static const CGFloat MJDuration = 2.0;
 }
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

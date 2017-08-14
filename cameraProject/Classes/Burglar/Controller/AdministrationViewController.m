@@ -11,7 +11,7 @@
 #import "AddBurglarViewController.h"
 #import "AdministrationModel.h"
 #import "MJRefresh.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 #import "MBProgressHUD.h"
 static const CGFloat MJDuration = 0.5;
 @interface AdministrationViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -275,7 +275,7 @@ static const CGFloat MJDuration = 0.5;
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

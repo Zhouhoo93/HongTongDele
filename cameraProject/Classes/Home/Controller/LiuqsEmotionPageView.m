@@ -30,11 +30,11 @@
         btn.btnType = (i == emojiCount - 1) ? 1 : 0;
         if (i == emojiCount - 1) {
             btn.emotionName = @"back_arrow";
-            btn.Ex_size = CGSizeMake(emotionW + space, emotionW + space);
-            CGFloat X = btn.Ex_x;
-            CGFloat Y = btn.Ex_y;
-            btn.Ex_x = X - space / 3;
-            btn.Ex_y = Y - space / 3;
+            btn.size = CGSizeMake(emotionW + space, emotionW + space);
+            CGFloat X = btn.x;
+            CGFloat Y = btn.y;
+            btn.x = X - space / 3;
+            btn.y = Y - space / 3;
             [btn addTarget:self action:@selector(deleteBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         }else {
   

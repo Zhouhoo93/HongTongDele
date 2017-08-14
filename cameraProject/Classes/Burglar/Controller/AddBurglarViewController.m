@@ -11,7 +11,7 @@
 #import "BurglarViewController.h"
 #import "HSingleGlobalData.h"
 #import "MBProgressHUD.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 @interface AddBurglarViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 @property (nonatomic,strong) UITableView *tableview;
 @property (nonatomic,copy) NSString *selfName; //设备名称
@@ -375,7 +375,7 @@
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

@@ -7,7 +7,7 @@
 //
 
 #import "ListShebeiViewController.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 @interface ListShebeiViewController ()
 @property (nonatomic,strong) UIScrollView *bgScroll;
 @property (nonatomic,strong)NSMutableArray *dataArr;
@@ -639,7 +639,7 @@
 
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

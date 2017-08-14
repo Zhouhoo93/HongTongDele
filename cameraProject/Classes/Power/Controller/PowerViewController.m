@@ -7,7 +7,7 @@
 //
 
 #import "PowerViewController.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 @interface PowerViewController ()
 @property (nonatomic,strong)NSMutableArray *dataArr;
 @property (nonatomic,strong)NSMutableArray *dataArr1;
@@ -399,7 +399,7 @@
 }
 -(void)backTo{
     [self clearLocalData];
-    LoginViewController *VC =[[LoginViewController alloc] init];
+    OneLoginViewController *VC =[[OneLoginViewController alloc] init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
 }

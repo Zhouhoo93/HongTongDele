@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 #import "MedicalViewController.h"
 #import "ScanViewController.h"
 #import "HomeHeader.h"

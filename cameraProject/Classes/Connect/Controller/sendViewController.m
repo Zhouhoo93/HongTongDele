@@ -8,7 +8,7 @@
 
 #import "sendViewController.h"
 #import "HomeViewController.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 #import "AddressPickerView.h"
 #import "BurglarViewController.h"
 #import "BurglarViewController.h"
@@ -171,7 +171,7 @@
      
      -(void)backTo{
          [self clearLocalData];
-         LoginViewController *VC =[[LoginViewController alloc] init];
+         OneLoginViewController *VC =[[OneLoginViewController alloc] init];
          VC.hidesBottomBarWhenPushed = YES;
          [self.navigationController pushViewController:VC animated:YES];
      }

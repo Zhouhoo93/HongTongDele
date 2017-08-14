@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LoginViewController.h"
+#import "OneLoginViewController.h"
 #import "GFTabBarController.h"
 #import "ZHTabBarController.h"
 #import "HSingleGlobalData.h"
@@ -23,7 +23,12 @@
 #import "HSingleGlobalData.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <RongIMKit/RongIMKit.h>
-@interface AppDelegate ()<JPUSHRegisterDelegate,RCIMUserInfoDataSource,RCIMGroupInfoDataSource>
+#import "GLCore.h"
+#import "WXApi.h"
+#import "WeiboSDK.h"
+#define WX_APP           (@"wxe39a73e26dcf1b36")
+#define Weibo_APP        (@"971559106")
+@interface AppDelegate ()<JPUSHRegisterDelegate,RCIMUserInfoDataSource,RCIMGroupInfoDataSource,WXApiDelegate, WeiboSDKDelegate>
 @property (nonatomic,strong) helpModel *help;
 @property (nonatomic,copy)NSString *city;
 @property (nonatomic,copy)NSString *straight_line_distance;//直线距离
@@ -328,6 +333,16 @@ registrationID:161a3797c808ccc2564
     [defaultCenter addObserver:self selector:@selector(networkDidReceiveMessage:) name:kJPFNetworkDidReceiveMessageNotification object:nil];
     
     [defaultCenter addObserver:self selector:@selector(networkDidLogin:) name:kJPFNetworkDidLoginNotification object:nil];
+    
+    //-------------亲加直播------------
+    [GLCore registerWithAppKey:@"de8b955b8b634fe2826e13ce077b26e2"
+                  accessSecret:@"77d7262d8c7e4676a5e7b1b333169d29"
+                     companyId:@"a002ab3fda3544fbabfd839dc119776f"];
+    [WXApi registerApp:WX_APP];
+    [WeiboSDK registerApp:Weibo_APP];
+    [WeiboSDK enableDebugMode:YES];
+
+    
     //判断是否登陆
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *passName = [userDefaults valueForKey:@"passName"];
@@ -344,7 +359,7 @@ registrationID:161a3797c808ccc2564
         ZHTabBarController *baseNaviVC = [storyboard instantiateViewControllerWithIdentifier:@"Main"];
         self.window.rootViewController = baseNaviVC;
     }else{
-        LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+        OneLoginViewController *loginViewController = [[OneLoginViewController alloc] initWithNibName:@"OneLoginViewController" bundle:nil];
         UINavigationController *navigationController =
         [[UINavigationController alloc] initWithRootViewController:loginViewController];
         
